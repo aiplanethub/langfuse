@@ -367,7 +367,7 @@ export default function SessionsTable({
               : {
                   isLoading: false,
                   isError: false,
-                  data: sessions.data.map((t) => convertToTableRow(t)),
+                  data: sessions.data.map((t: any) => convertToTableRow(t)),
                 }
         }
         pagination={{
@@ -382,7 +382,7 @@ export default function SessionsTable({
         help={{
           description:
             "A session is a collection of related traces, such as a conversation or thread. To begin, add a sessionId to the trace.",
-          href: "https://langfuse.com/docs/tracing-features/sessions",
+          href: "",
         }}
       />
     </>

@@ -49,10 +49,10 @@ const userNavigation = [
     onClick: () => {},
     content: <ThemeToggle />,
   },
-  {
-    name: "Sign out",
-    onClick: signOutUser,
-  },
+  // {
+  //   name: "Sign out",
+  //   onClick: signOutUser,
+  // },
 ];
 
 const pathsWithoutNavigation: string[] = [
@@ -208,7 +208,7 @@ export default function Layout(props: PropsWithChildren) {
     <>
       <Head>
         <title>
-          {currentPathName ? `${currentPathName} | Langfuse` : "Langfuse"}
+          {currentPathName ? `${currentPathName} | AI Planet` : "AI Planet"}
         </title>
         <link
           rel="apple-touch-icon"
@@ -298,7 +298,7 @@ export default function Layout(props: PropsWithChildren) {
                         <div className="text-xs font-semibold text-muted-foreground">
                           Project
                         </div>
-                        <NewProjectButton size="xs" />
+                        {/* <NewProjectButton size="xs" /> */}
                       </div>
                       <ProjectNavigation
                         currentProjectId={projectId ?? ""}
@@ -328,7 +328,7 @@ export default function Layout(props: PropsWithChildren) {
               <ul role="list" className="flex h-full flex-col">
                 <MainNavigation nav={topNavigation} />
                 <MainNavigation nav={bottomNavigation} className="mt-auto" />
-                <FeedbackButtonWrapper
+                {/* <FeedbackButtonWrapper
                   className="space-y-1"
                   title="Provide feedback"
                   description="What do you think about this project? What can be improved?"
@@ -341,12 +341,12 @@ export default function Layout(props: PropsWithChildren) {
                     />
                     Feedback
                   </li>
-                </FeedbackButtonWrapper>
+                </FeedbackButtonWrapper> */}
                 <div className="mb-2 flex flex-row place-content-between items-center">
                   <div className="text-xs font-semibold text-muted-foreground">
                     Project
                   </div>
-                  <NewProjectButton size="xs" />
+                  {/* <NewProjectButton size="xs" /> */}
                 </div>
                 <ProjectNavigation
                   currentProjectId={projectId ?? ""}

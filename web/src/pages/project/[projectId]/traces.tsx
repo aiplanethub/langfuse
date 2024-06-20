@@ -13,8 +13,8 @@ export default function Traces() {
         title="Traces"
         help={{
           description:
-            "A trace represents a single function/api invocation. Traces contain observations. See docs to learn more.",
-          href: "https://langfuse.com/docs/tracing",
+            "A trace represents a single function/api invocation. Traces contain observations.",
+          href: "",
         }}
       />
       <TracesTable projectId={projectId} />
