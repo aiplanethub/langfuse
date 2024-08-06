@@ -59,10 +59,10 @@ const VersionLabel = ({ className }: { className?: string }) => {
       <DropdownMenuContent>
         {hasUpdate ? (
           <>
-            <DropdownMenuLabel>
+            {/* <DropdownMenuLabel>
               New {checkUpdate.data?.updateType} version:{" "}
               {checkUpdate.data?.latestRelease}
-            </DropdownMenuLabel>
+            </DropdownMenuLabel> */}
             <DropdownMenuSeparator />
           </>
         ) : !env.NEXT_PUBLIC_LANGFUSE_CLOUD_REGION ? (
@@ -180,13 +180,13 @@ export const LangfuseLogo = ({
       <LangfuseIcon size={size === "sm" ? 16 : 20} />
       <span
         className={cn(
-          "ml-2 font-mono font-semibold",
-          size === "sm" ? "text-sm" : "text-lg",
+          "ml-2 font-mono font-semibold text-sm",
+          // size === "sm" ? "text-sm" : "text-sm",
         )}
       >
-        Langfuse
+        AI Planet
       </span>
-      {version && <VersionLabel className="ml-2" />}
+      {/* {version && <VersionLabel className="ml-2" />} */}
     </div>
   </div>
 );
