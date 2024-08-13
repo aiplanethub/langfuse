@@ -182,7 +182,7 @@ export function CreateLLMApiKeyDialog() {
                 <FormItem>
                   <FormLabel>Provider name</FormLabel>
                   <FormDescription>
-                    Name to identify the key within Langfuse.
+                    Name to identify the key within AI Planet.
                   </FormDescription>
                   <FormControl>
                     <Input {...field} placeholder="OpenAI" />
@@ -284,7 +284,7 @@ export function CreateLLMApiKeyDialog() {
                       <FormLabel>Enable default models</FormLabel>
                       <FormDescription>
                         Default models for the selected adapter will be
-                        available in Langfuse features.
+                        available in AI Planet features.
                       </FormDescription>
                       {currentAdapter === LLMAdapter.Azure && (
                         <FormDescription className="text-yellow-700">
